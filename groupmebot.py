@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ = "Mark Babatunde"
-
 from __future__ import absolute_import
 from __future__ import division, print_function, unicode_literals
 
@@ -17,6 +15,8 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lsa import LsaSummarizer as Summarizer
 from sumy.nlp.stemmers import Stemmer
 from sumy.utils import get_stop_words
+
+__author__ = "Mark Babatunde"
 
 COUNT = 0
 
