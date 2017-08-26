@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+__author__ = "Mark Babatunde"
+
 from __future__ import absolute_import
 from __future__ import division, print_function, unicode_literals
 
@@ -18,7 +20,7 @@ from sumy.utils import get_stop_words
 
 COUNT = 0
 
-def main():
+def groupme_bot():
     sentenceList = []
     group = Group.list().first
     messages = group.messages()
@@ -54,5 +56,5 @@ def main():
     print("Successfully completed!")
     
 if __name__=="__main__":
-    main()
+    groupme_bot()
 
