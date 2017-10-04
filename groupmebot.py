@@ -50,7 +50,7 @@ def groupme_bot():
             sentenceList.append(str(sentence))
     
     print (sentenceList)
-    bot.post(str(sentenceList).replace("[","").replace("]","").replace("'","").replace("\\n"," "))
+    bot.post(str(sentenceList).replace("[","").replace("]","").replace("'","").replace("\\n"," ").replace(".,","."))
     duration = default_timer() - start
     bot.post("Time to complete this TL;DR summary: " + '{:.2f}'.format(float(duration)) + " seconds")
     print("Successfully completed!")
