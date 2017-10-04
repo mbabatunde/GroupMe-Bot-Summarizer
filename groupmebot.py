@@ -32,7 +32,7 @@ def groupme_bot():
     bot = Bot.list().first
 
     LANGUAGE = "english"
-    SENTENCES_COUNT = 2
+    SENTENCES_COUNT = 3
 
     matches = re.finditer(regex, message)
 
